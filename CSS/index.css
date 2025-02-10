@@ -1,0 +1,327 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*https://i.pinimg.com/736x/5c/52/1e/5c521ed49115f4e174673eaf7c6986ce.jpg*/
+/*https://i.pinimg.com/736x/d6/f7/e3/d6f7e3a0787cb6ee0ba9d5dbee5bf614.jpg*/
+body{
+   background:  linear-gradient(rgba(18, 7, 7, 0.31)) pink;
+   background-image: url("https://i.pinimg.com/736x/64/fd/57/64fd578e296268b8b24f9f9fd33b7ecb.jpg");
+    width: 100%;
+    height: 150vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    margin: auto;
+    background-position: center;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.LHS{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin: 5px;
+    padding: 5px;
+    font-size: larger;
+}
+.Logo{
+    width: 50px;
+    height: 50px;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.RHS{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-right: 50px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    padding: 10px;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+a:hover{
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.299);
+}
+
+.SearchBox{
+    padding: 15px;
+    margin: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    text-align: center;
+    width: 60%;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.46);
+    border-radius: 10px;
+    background: transparent;
+    margin-left:30px ;
+    font-weight: bold;
+    transition: 2s;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+input::placeholder{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+input:hover{
+    box-shadow: 1px 1px 1px white;
+}
+.search{
+    width: 30px;
+    height: 20px;
+}
+.btn{
+    width: 10%;
+    height: 45px;
+    border-radius: 50px;
+    background: transparent;
+    border:1px solid white;
+    color: rgb(0, 0, 0);
+    transition: 2s;
+    margin-left: 10px;
+    padding-bottom: none;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+}
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.321);
+      box-shadow: 1px 1px 1px white;
+}
+.logo2{
+    width: 300px;
+    height: 200px;
+}
+.bodypart1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainBody{
+    padding: 10px;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    grid-template-rows: repeat(3,200px);
+    gap: 20px;
+}
+#box1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+}
+p{
+    font-size: 30px;
+}
+.box{
+    border: 1px solid white;
+    transition: 800ms;
+}
+#box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    gap: 15px;
+}
+
+#box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    gap: 15px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+#Description{
+    font-size: 14px;
+}
+
+#box4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    gap: 20px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+#box5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    gap: 20px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.box:hover{
+    box-shadow: -4px 2px 2px 2px rgba(52, 51, 50, 0.611);
+}
+
+.close_btn, #close{
+    background: none;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+    margin-left: 15px;
+}
+#menu{
+    display: none;
+}
+/* #menubtn{
+    position: absolute;
+    display: none;
+} */
+/* ------------------------------------------------------Media queries---------------------------------------------------------------------------------- */
+
+@media (max-width:650px)
+{
+
+    body{
+        height: 150vh;
+    }
+    .Header{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        align-items: center;
+    }
+    .RHS{
+        display: none;
+    }
+
+    .SearchBox{
+        width: 100%;
+        padding: 15px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainBody{
+        padding: 10px;
+        margin: 5px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+        gap: 20px;
+        /* height: 100%; */
+    }
+    .box{
+        text-align: justify;
+        overflow: auto;
+    }
+    p{
+        font-size: 12px;
+    }
+    #menu{
+        display: block;
+        background: transparent;
+        margin-right: 15px;
+    }
+    #menubtn{
+        width: 25px;
+        height: 25px;
+        background: none;
+        border: none;
+        margin-right: 15px;
+        transition: 1s;
+    }
+
+    .RHS{
+        display: none;
+    }
+
+    .menu-content{
+        background-color: rgba(236, 227, 227, 0);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 150px;
+        gap: 20px;
+       justify-content: center;
+       padding: 10px;
+       z-index: 100;
+       /* right: 50px; */
+       transform: translate(-50%);
+       left: 50%;
+       top: 110px;
+       border: 1px solid rgba(255, 255, 255, 0.793);
+       border-radius: 25px;
+       backdrop-filter: blur(25px);
+    }
+    #menuimg{
+        width: 25px;
+        height: 25px; 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Rotate and fade out the menu icon */
+#menuimg[src*="icons8-menu.svg"] {
+    transform: rotate(0deg);
+    opacity: 1;
+}
+
+/* Rotate and fade in the close icon */
+#menuimg[src*="cancel-close-delete-svgrepo-com.svg"] {
+    transform: rotate(90deg);
+    opacity: 1;
+}
+
+
+    .nextpage,.about{
+        color: black;
+        text-align: center;
+        border: 1px solid rgba(128, 128, 128, 0.732);
+    }
+
+}
+

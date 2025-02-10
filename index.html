@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Horizon 🌄</title>
+</head>
+<body>
+    <div class="Header">
+        <div class="LHS">
+            <img src="Images/cloud-solid.svg" alt="Logo" class="Logo">
+            <h1 style="color: white;" class="title">Horizon</h1>
+        </div>
+        <div class="RHS">
+           <a href="Forecast.html" class="l1">Prediction</a>
+           <a href="About" class="l2">About</a>
+        </div>
+        <div id="menu">
+            <button type="button" id="menubtn" onclick="ShowMenu()"><img src="Images/icons8-menu.svg" alt="menuimg" id="menuimg"></button>
+        </div>
+    </div>
+    <div class="bodypart1">
+        <div class="image1">
+            <img src="Images/4779025-middle-removebg-preview.png" alt="logo2" class="logo2">
+        </div>
+        <div class="SearchBox">
+            <input type="text" placeholder="Enter City_Name" id="City_Name">
+            <button type="button" class="btn" onclick="Wheather()"> <img src="Images/search.svg" alt="search" class="search"></button>
+            <button type="reset" class="close_btn" onclick="EraseData()"><img src="Images/icons8-cancel.svg" alt="closebtn" id="close"></button>
+        </div>
+
+        <div class="mainBody">
+            <div class="box" id="box1">
+                <img src="Images/thermometer.png" alt="tempreture" width="100px" height="100px">
+                <p id="tempreture">Actual tempreture</p>
+            </div>
+            <div class="box" id="box2">
+                <img src="Images/humidity.png" alt="humidity" width="50px" height="50px">
+                <p id="Humidity">Humidity</p>
+                
+            </div>
+            <div class="box" id="box3">
+                <img src="Images/machine-learning.png" alt="Description" width="60px" height="70px">
+                <p id="Description">Wheather Description</p>
+            </div>
+            <div class="box" id="box4">
+                <img src="Images/blood-pressure.png" alt="Pressure" width="60px" height="60px">
+                <p id="Pressure">Pressure</p>
+            </div>
+            <div class="box" id="box5">
+                <img src="Images/dew.png" alt="dew" width="70px" height="70px">
+                <p id="Dew">Dew</p>
+            </div>
+        </div>
+    </div>
+   
+</body>
+<script src="JavaScript/Wheather.js"></script>
+</html>
